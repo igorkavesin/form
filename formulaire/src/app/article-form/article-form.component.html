@@ -1,0 +1,11 @@
+<p>article-form works!</p>
+
+<form #f="ngForm" (ngSubmit)="saveArticle(f)">
+  <p> <input placeholder="article title" ngModel name="title"> </p>
+  <p> <textarea placeholder="article text" ngModel name="text"></textarea> </p>
+  <p><button type="submit"> SAVE</button></p>
+
+  <span *ngIf="f.form.controls.title" >
+    {{ f.form.controls.title.value  }}
+  </span>
+</form>
