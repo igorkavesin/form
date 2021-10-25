@@ -1,0 +1,12 @@
+<p>article-form-builder works!</p>
+
+
+<form [formGroup]="articleGroup" (ngSubmit)="saveArticle()">
+
+    <div formGroupName="article">
+      <p> <input placeholder="Article Title" formControlName="title"> </p>
+      <p> <textarea placeholder="Article text" formControlName="text"></textarea> </p>
+    </div>
+
+  <p> <button type="submit"> SAVE </button> </p>
+</form>

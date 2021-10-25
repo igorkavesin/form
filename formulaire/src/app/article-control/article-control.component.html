@@ -1,0 +1,15 @@
+<p>article-control works!</p>
+
+
+<p>
+  <textarea
+    [formControl]="bodyControl"
+    required
+    appMaxWordCountValidator="2" >
+  </textarea><br><br>
+
+  <button (click)="saveArticle()"> SAVE </button>
+</p>
+
+
+

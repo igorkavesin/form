@@ -1,0 +1,55 @@
+<p>article-editor works!</p>
+
+
+<ul>
+  <li *ngFor="let t of tagControles; let i = index">
+    {{-1-i}}<input [formControl]="t">
+    <button (click)="removeTag(i)"> DELETE</button>
+  </li>
+</ul>
+<p>
+  <button (click)="addTag()"> + </button>
+  <button (click)="saveArticleTag()"> SAVE </button>
+</p>
+
+<hr>
+
+<span style="color:red;">1...</span>
+<div style="margin:10px"> <h2>  [(ngModel)]="title"</h2>
+  <input [(ngModel)]="title">
+  <input [(ngModel)]="title">
+  {{title}}
+</div>
+<span style="color:red;">2...</span>
+<div style="margin:10px"> <h2>[ngModel]="title" (ngModelChange)="title=$event"</h2>
+  <input [ngModel]="title" (ngModelChange)="title=$event">
+  <input [ngModel]="title" (ngModelChange)="title=$event">
+  {{title}}
+</div>
+<span style="color:red;">3...</span>
+<div style="margin:10px"> <h2> required </h2>
+  <input required>
+  {{title}}
+</div>
+<span style="color:red;">4...</span>
+<div style="margin:10px"> <h2> [formControl]="titleControl" required></h2>
+  <input [formControl]="titleControl">
+
+  <button (click)="submitTitle()"> Submit </button>
+</div>
+
+<span style="color:red;">5...</span>
+<div style="margin:10px"> <h2> [formControl]="titleControl" required></h2>
+  <input [formControl]="titleControl">
+  <input [formControl]="textControl">
+  <button (click)="saveArticle()"> SAVE </button>
+  <p>
+    Titel: {{article.title}}
+    Text: {{article.text}}
+  </p>
+
+</div>
+
+
+
+

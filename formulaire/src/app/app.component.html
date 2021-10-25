@@ -1,0 +1,18 @@
+
+<div style="padding:10px;">
+  <button [routerLink]="['first']" mat-button color="primary"> first: FormArray</button>
+  <button [routerLink]="['second']" mat-button color="primary"> second: ngModel</button>
+  <button [routerLink]="['third']" mat-button color="primary"> third: Form builder </button>
+  <button [routerLink]="['fourth']" mat-button color="primary"> fourth: Control </button>
+  <button [routerLink]="['fifth']" mat-button color="primary"> fifth: Control </button>
+</div>
+
+<div style="padding:10px;">
+  <a href="first"> FIRST </a> |
+  <a href="second"> SECOND </a> |
+  <a href="third"> THIRD </a> |
+  <a href="fourth"> FOURTH </a> |
+  <a href="fourth"> FIFTH </a> |
+
+  <router-outlet></router-outlet>
+</div>
