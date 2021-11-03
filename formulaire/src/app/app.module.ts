@@ -13,6 +13,10 @@ import { ArticleControlComponent } from './article-control/article-control.compo
 import { PhoneNumberValidatorDirective } from './phone-number-validator.directive';
 import { MaxWordCountValidatorDirective } from './max-word-count-validator.directive';
 import { ArticleFormDelayComponent } from './article-form-delay/article-form-delay.component';
+import { DisplayComponent } from './display/display.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,8 @@ import { ArticleFormDelayComponent } from './article-form-delay/article-form-del
     ArticleControlComponent,
     PhoneNumberValidatorDirective,
     MaxWordCountValidatorDirective,
-    ArticleFormDelayComponent
+    ArticleFormDelayComponent,
+    DisplayComponent
   ],
   imports: [
     MatButtonModule,
@@ -30,7 +35,9 @@ import { ArticleFormDelayComponent } from './article-form-delay/article-form-del
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

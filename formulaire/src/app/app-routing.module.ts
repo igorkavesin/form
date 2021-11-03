@@ -5,13 +5,15 @@ import { ArticleControlComponent } from './article-control/article-control.compo
 import { ArticleEditorComponent } from './article-editor/article-editor.component';
 import { ArticleFormBuilderComponent } from './article-form-builder/article-form-builder.component';
 import { ArticleFormComponent } from './article-form/article-form.component';
+import { DisplayComponent } from './display/display.component';
 
 const routes: Routes = [
   {path:"first", component:ArticleEditorComponent},
   {path:"second", component:ArticleFormComponent},
   {path:"third", component:ArticleFormBuilderComponent},
   {path:"fourth", component: ArticleControlComponent},
-  {path: "fifth", component:ArticleFormDelayComponent}
+  {path: "fifth", component:ArticleFormDelayComponent},
+  {path: "display", component:DisplayComponent}
 ];
 
 @NgModule({
